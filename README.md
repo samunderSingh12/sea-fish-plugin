@@ -6,6 +6,17 @@
 
 A Fish shell function that lets you search the web using multiple search engines, ChatGPT, and direct URLs with browser integration. Features intelligent history and interactive fuzzy finding with fzf.
 
+## Demo 📸
+
+# Interactive Mode
+![Sea's interactive fzf interface](interactive.png)
+
+### ChatGPT Search
+```fish
+sea !ch "explain quantum computing"
+```
+![ChatGPT search results](chatgpt.png)
+
 ## Features
 
 - 🔍 Multiple search engines via "!bangs" (Google, Wikipedia, YouTube, GitHub, etc.)
@@ -31,8 +42,7 @@ sea !gh fisher
 sea example.com
 sea https://fishshell.com
 
-# Interactive menu (no arguments)
-sea
+Interactive menu (no arguments) : `sea`
 
 Press Ctrl-D on a history item in the fzf menu to delete it.
 Available Bangs:
@@ -59,6 +69,10 @@ Bangs and the default search engine are configured within the sea.fish function 
    - [fzf](https://github.com/junegunn/fzf)
    - Brave browser (or modify code for your preferred browser)
 
-2. Save the function to your Fish config:
+2. for easy install use fisher[fish shell package manager]:
    ```bash
-   curl -Lo ~/.config/fish/functions/sea.fish https://raw.githubusercontent.com/samunderSingh12/sea/main/sea.fish
+   fisher install samunderSingh12/sea-fish-plugin
+
+4. first of all install fisher[duh]:
+   ```bash
+   curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
