@@ -9,13 +9,13 @@ A Fish shell function that lets you search the web using multiple search engines
 ## Demo 📸
 
 # Interactive Mode
-![Sea's interactive fzf interface](interactive.png)
+![Sea's interactive fzf interface](int.jpg)
 
 ### ChatGPT Search
 ```fish
 sea !ch "explain quantum computing"
 ```
-![ChatGPT search results](chatgpt.png)
+![ChatGPT search results](chatgpt.jpg)
 
 ## Features
 
@@ -30,17 +30,16 @@ sea !ch "explain quantum computing"
 USAGE
 
 Use `sea !ch docker` to search ChatGPT
-# Default search (Brave)
-sea my awesome query
+# Default search (Brave) `sea` my awesome query
 
-# Search with a bang
-sea !g fish shell scripting
-sea !yt epic cat videos
-sea !gh fisher
+Search with a bang
+`sea !g`fish shell scripting
+`sea !yt` epic cat videos
+`sea !gh`fisher
 
 # Open a URL directly
-sea example.com
-sea https://fishshell.com
+`sea` example.com
+`sea` https://fishshell.com
 
 Interactive menu (no arguments) : `sea`
 
